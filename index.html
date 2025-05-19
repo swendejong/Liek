@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hey hallo Liek💕</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: linear-gradient(to bottom, #ffe4ec, #ffccf9);
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      .photo-section {
+        position: relative;
+        text-align: center;
+        padding: 60px 20px;
+        margin: 30px auto;
+        max-width: 700px;
+      }
+
+      .big-heart {
+        position: absolute;
+        font-size: 30em;
+        /* huge heart */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        z-index: 0;
+        pointer-events: none;
+        line-height: 1;
+      }
+
+      .photo-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .photo-wrapper img {
+        width: 160px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border: 2px solid #ffa8d3;
+      }
+
+      .caption {
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #d63384;
+      }
+
+      header {
+        text-align: center;
+        padding: 50px 20px 20px;
+      }
+
+      header h1 {
+        font-size: 3em;
+        color: #ff69b4;
+      }
+
+      .love-letter {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff0f5;
+        border: 2px dashed #ff99c8;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .surprise {
+        text-align: center;
+        margin: 50px auto;
+      }
+
+      .surprise-button {
+        background-color: #ffb6c1;
+        color: white;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .surprise-button:hover {
+        background-color: #ff69b4;
+      }
+
+      .animation {
+        display: none;
+        font-size: 2em;
+        color: #ff1493;
+        margin-top: 20px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio autoplay loop>
+      <source src="jouw-liedje.mp3" type="audio/mpeg" />
+      Je browser ondersteunt dit audioformaat niet.
+    </audio>
+
+    <header>
+      <h1>Hey hallo Liek💕</h1>
+    </header>
+
+    <section class="love-letter">
+      <p>Lieve Liek,</p>
+      <p>
+        Vanaf het moment dat we aan het praten waren hadden we het al gezellig.
+        Het is heel leuk om gezellig spelletjes met je te spelen.
+      </p>
+      <p>
+        Of gewoon luisteren naar alles wat je hebt te vertellen. Je bent zo lief
+        en zorgzaam en ik kan je echt alles vertellen (ook al durf ik dat niet).
+      </p>
+      <p>
+        Ik vind het heel fijn om te zien hoe je naar me kijkt. Je kijkt zo lief
+        en soms ook best verliefd. hahhah heeelll soms hoor.
+      </p>
+      <p>
+        Er is niets schattiger dan jouwn ogen terwijl je aan het lachen bent. of
+        hoe groot ze worden als je me bezorgt aankijkt.
+      </p>
+      <p>
+        Ook vind ik het heel fijn dat je je veilig voeld bij mij. Ik zou ook
+        altijd mijn best doen om je dit gevoel te geven.
+      </p>
+      <p>
+        Hoewel ik je nog geen jaren ken voelt het soms wel alsof dat zo is je
+        snapt me heel goed en kan precies lezen hoe ik me voel en wat ik denk.
+      </p>
+      <p>
+        Als ik in je ogen kijk dan voel ik dingen die ik niet kan beschrijven,
+        het is zo'n veilig en liefdevol gevoel wat ik lang niet meer heb
+        gevoeld.
+      </p>
+      <p>
+        Je bent zo'n sterke en leuke meid ik voel me ze lucky om jouwn liefde te
+        mogen krijgen.
+      </p>
+      <p>
+        Terwijl ik dit aan het typen ben zit ik steeds meer te twijfelen of ik
+        dit nou wel of niet moet vragen...
+      </p>
+      <p>
+        Toen we gisteren aan het praten waren toen dacht ik dat je door had wat
+        ik bedoelde je zei zelfs dat je ja zou zeggen. haha
+      </p>
+      <p>
+        Maar ik weet met alles wat jij nu hebt gaan dat dit misschien too much
+        is en misschien is het uberhaupt wel gewoon te snel
+      </p>
+      <p>
+        Daarom wil ik je ook zeggen dat je je niet gedwongen moet voelen om hier
+        nu mee bezig te zijn.
+      </p>
+      <p>Daarom wil ik je iets vragen...</p>
+
+      <p
+        id="vraag"
+        style="
+          text-align: center;
+          font-size: 1.5em;
+          margin-top: 20px;
+          display: none;
+        "
+      >
+        <strong>Wil jij mijn vriendin zijn? 💖</strong>
+      </p>
+
+      <div style="text-align: center; margin-top: 30px">
+        <button class="surprise-button" onclick="toonVraag()">
+          Klik hier voor de vraag 💌
+        </button>
+      </div>
+    </section>
+
+    <section class="surprise">
+      <button class="surprise-button" onclick="showSurprise()">
+        Klik hier voor een verrassing 🎁
+      </button>
+      <div id="surpriseText" class="animation">
+        Je krijgt een Mini highland cow (knuffel) 😄💗
+        <a
+          href="https://followyourlegend.com/collections/legend-plushies/products/couple-of-cows-legend-plushie-bundle"
+        >
+          Click hier</a
+        >
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+      function toonVraag() {
+        const vraag = document.getElementById("vraag");
+        vraag.style.display = "block";
+        vraag.style.animation = "fadeIn 1.5s ease-in-out forwards";
+
+        // Eventueel confetti 🎉
+        confetti({
+          particleCount: 150,
+          spread: 100,
+          origin: { y: 0.6 },
+        });
+      }
+      function showSurprise() {
+        // Laat tekst zien
+        const text = document.getElementById("surpriseText");
+        text.style.display = "block";
+
+        // Confetti animatie
+        confetti({
+          particleCount: 200,
+          spread: 100,
+          origin: { y: 0.6 },
+        });
+      }
+    </script>
+
+    <script></script>
+  </body>
+</html>
